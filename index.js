@@ -3,6 +3,7 @@ function Legend  ( opts ) {
   var title = opts.title
   var items = opts.items
   this.element = document.createElement("div");
+  this.element.className = "legend"
 
   this.legendTitle = document.createElement("div");
   this.legendTitle.className = "legend-title"
@@ -28,3 +29,5 @@ function Legend  ( opts ) {
     legendList.appendChild(row)
   }
 }
+
+module.exports = Legend

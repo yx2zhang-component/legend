@@ -1,0 +1,20 @@
+{
+  "name": "component-legend",
+  "description": "legend UI element",
+  "keywords": ["legend"],
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:yx2zhang-component/legend.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --harmony --reporter spec"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "*",
+    "expect.js": "*"
+  }
+}
+
