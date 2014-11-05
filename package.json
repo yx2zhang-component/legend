@@ -1,7 +1,7 @@
 {
-  "name": "component-legend",
+  "name": "legend",
   "description": "legend UI element",
-  "keywords": ["legend"],
+  "keywords": ["legend", "component"],
   "version": "0.0.1",
   "repository": {
     "type": "git",
