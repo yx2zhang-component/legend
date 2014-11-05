@@ -7,26 +7,29 @@ function Legend  ( opts ) {
 
   this.legendTitle = document.createElement("div");
   this.legendTitle.className = "legend-title"
+  this.legendTitle.innerHTML = opts.title
 
   this.legendList = document.createElement("div");
   this.legendList.className = "legend-list";
 
+  this.element.appendChild(this.legendTitle)
+  this.element.appendChild(this.legendList)
+
   for (var i = 0; i<items.length; i++){
     var row = document.createElement("div");
-    var key = document.createElement("div");
-    var value  = document.createElement("div");
-
-    key.classList.add("legend-key")
-    value.classList.add("legend-value")
-
     row.className = "legend-row"
+
+    var key = items[i].key;
+    key.classList.add("legend-key")
+
+    var value  = document.createElement("div");
+    value.classList.add("legend-value")
+    value.innerHTML = items[i].value
+
     row.appendChild(key);
     row.appendChild(value);
 
-    value.text = items[i].value
-    key.innerHTML = items[i].key
-
-    legendList.appendChild(row)
+    this.legendList.appendChild(row)
   }
 }
 

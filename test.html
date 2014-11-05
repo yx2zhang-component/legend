@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Legend</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style>
+    </style>
+  </head>
+  <body>
+    <script src="build/build.js"></script>
+    <script>
+    (function(){
+      var Lengend = require('legend');
+      e1 = document.createElement("div");
+      e2 = document.createElement("div");
+      e1.innerHTML = "$"
+      e2.innerHTML = "@"
+
+      var items = [
+        {key: e1, value: "show me the money"},
+        {key: e2, value: "black sheep"}
+      ]
+
+      var config = {
+        title: "legend test",
+        items: items
+      }
+
+      var legend = new Lengend(config);
+      document.body.appendChild(legend.element);
+
+    })();
+    </script>
+  </body>
+</html>
+
